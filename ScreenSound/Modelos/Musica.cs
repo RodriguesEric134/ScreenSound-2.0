@@ -1,4 +1,5 @@
 ﻿namespace ScreenSound.Modelos;
+
 internal class Musica
 {
     public Musica(Banda artista, string nome)
@@ -13,6 +14,7 @@ internal class Musica
     public bool Disponivel { get; set; }
     public string DescricaoResumida => $"A música {Nome} pertence à banda {Artista}";
 
+    // Exibe a ficha técnica da música
     public void ExibirFichaTecnica()
     {
         Console.WriteLine($"Nome: {Nome}");
@@ -21,7 +23,8 @@ internal class Musica
         if (Disponivel)
         {
             Console.WriteLine("Disponível no plano.");
-        } else
+        }
+        else
         {
             Console.WriteLine("Adquira o plano Plus+");
         }
